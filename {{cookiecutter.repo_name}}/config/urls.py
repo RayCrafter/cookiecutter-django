@@ -16,7 +16,7 @@ urlpatterns = [
 
     # User management
     url(r'^users/', include("{{ cookiecutter.repo_name }}.users.urls", namespace="users")),
-    url(r'^accounts/', include('allauth.urls')),
+    url('^registration/', include('registration.urls')),
 
     # Your stuff: custom urls includes go here
 
