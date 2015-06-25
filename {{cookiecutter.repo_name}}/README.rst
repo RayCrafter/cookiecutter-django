@@ -16,10 +16,7 @@ For configuration purposes, the following table maps the '{{cookiecutter.project
 ======================================= =========================== ============================================== ======================================================================
 Environment Variable                    Django Setting              Development Default                            Production Default
 ======================================= =========================== ============================================== ======================================================================
-DJANGO_AWS_ACCESS_KEY_ID                AWS_ACCESS_KEY_ID           n/a                                            raises error
-DJANGO_AWS_SECRET_ACCESS_KEY            AWS_SECRET_ACCESS_KEY       n/a                                            raises error
-DJANGO_AWS_STORAGE_BUCKET_NAME          AWS_STORAGE_BUCKET_NAME     n/a                                            raises error
-DJANGO_CACHES                           CACHES (default)            locmem                                         memcached
+DJANGO_CACHES                           CACHES (default)            locmem                                         localmem
 DJANGO_DATABASES                        DATABASES (default)         See code                                       See code
 DJANGO_DEBUG                            DEBUG                       True                                           False
 DJANGO_SECRET_KEY                       SECRET_KEY                  CHANGEME!!!                                    raises error
@@ -31,10 +28,8 @@ DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS   HSTS_INCLUDE_SUBDOMAINS     n/a         
 DJANGO_SESSION_COOKIE_HTTPONLY          SESSION_COOKIE_HTTPONLY     n/a                                            True
 DJANGO_SESSION_COOKIE_SECURE            SESSION_COOKIE_SECURE       n/a                                            False
 DJANGO_EMAIL_BACKEND                    EMAIL_BACKEND               django.core.mail.backends.console.EmailBackend django.core.mail.backends.smtp.EmailBackend
-DJANGO_EMAIL_HOST                       EMAIL_HOST                  localhost                                      smtp.sendgrid.com
-EMAIL_PORT                              EMAIL_PORT                  1025                                           587
-SENDGRID_USERNAME                       EMAIL_HOST_USER             n/a                                            raises error
-SENDGRID_PASSWORD                       EMAIL_HOST_PASSWORD         n/a                                            raises error
+DJANGO_EMAIL_HOST                       EMAIL_HOST                  localhost                                      localhost
+EMAIL_PORT                              EMAIL_PORT                  1025                                           1025
 DJANGO_DEFAULT_FROM_EMAIL               DEFAULT_FROM_EMAIL          n/a                                            "{{cookiecutter.project_name}} <noreply@{{cookiecutter.domain_name}}>"
 EMAIL_SUBJECT_PREFIX                    EMAIL_SUBJECT_PREFIX        n/a                                            "[{{cookiecutter.project_name}}] "
 ======================================= =========================== ============================================== ======================================================================
