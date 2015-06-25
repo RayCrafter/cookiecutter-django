@@ -21,14 +21,14 @@ Features
 * AngularJS_
 * 12-Factor_ based settings via django-environ_
 * Optimized development and production settings
-* Registration via django-allauth_
+* Registration via django-inspectional-registration_
 * Grunt build for compass and livereload
 
 .. _Bootstrap: https://github.com/twbs/bootstrap
 .. _AngularJS: https://github.com/angular/angular.js
 .. _django-environ: https://github.com/joke2k/django-environ
 .. _12-Factor: http://12factor.net/
-.. _django-allauth: https://github.com/pennersr/django-allauth
+.. _django-inspectional-registration: https://github.com/lambdalisue/django-inspectional-registration
 
 
 Constraints
