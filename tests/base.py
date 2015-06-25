@@ -25,7 +25,12 @@ class DjangoCookieTestCase(unittest.TestCase):
             "version": "0.1.0",
             "timezone": "UTC",
             "now": "2015/01/13",
-            "year": "2015"
+            "year": "2015",
+            "dbuser": "postgres",
+            "dbpasswd": "postgres",
+            "dbhost": "127.0.0.1",
+            "dbport": "5432",
+            "dbname": "testdb",
         }
         if extra_context:
             assert isinstance(extra_context, dict)
