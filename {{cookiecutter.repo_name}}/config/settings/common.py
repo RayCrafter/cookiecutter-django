@@ -37,7 +37,7 @@ DJANGO_APPS = (
 THIRD_PARTY_APPS = (
     'crispy_forms',  # Form layouts
     'registration',
-    'notification',
+    'registration.contrib.notification',
 )
 
 # Apps specific for this project go here.
