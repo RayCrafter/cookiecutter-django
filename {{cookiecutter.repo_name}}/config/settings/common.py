@@ -204,6 +204,10 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 
+# Registration app config
+ACCOUNT_ACTIVATION_DAYS=7
+REGISTRATION_SUPPLEMENT_CLASS=None
+
 # Custom user app defaults
 # Select the correct user model
 AUTH_USER_MODEL = 'users.User'
