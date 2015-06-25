@@ -9,7 +9,7 @@ cookiecutter-django
      :target: https://travis-ci.org/RayCrafter/cookiecutter-django?branch=master
      :alt: Build Status
 
-A cookiecutter_ template for Django. This is a fork from https://github.com/pydanny/cookiecutter-django.
+A cookiecutter_ template for Django. This is a fork from https://github.com/pydanny/cookiecutter-django. Thanks for the awesome template!
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 
