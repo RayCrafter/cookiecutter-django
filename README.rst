@@ -23,14 +23,12 @@ Features
 * Optimized development and production settings
 * Registration via django-allauth_
 * Grunt build for compass and livereload
-* Basic e-mail configurations for send emails via SendGrid_
 
 .. _Bootstrap: https://github.com/twbs/bootstrap
 .. _AngularJS: https://github.com/angular/angular.js
 .. _django-environ: https://github.com/joke2k/django-environ
 .. _12-Factor: http://12factor.net/
 .. _django-allauth: https://github.com/pennersr/django-allauth
-.. _SendGrid: https://sendgrid.com/
 
 
 Constraints
@@ -68,8 +66,8 @@ It prompts you for questions. Answer them::
     Resolving deltas: 100% (283/283), done.
     project_name (default is "project_name")? Reddit Clone
     repo_name (default is "Reddit_Clone")? reddit
-    author_name (default is "Your Name")? Daniel Greenfeld
-    email (default is "Your email")? pydanny@gmail.com
+    author_name (default is "Your Name")? David Zuber
+    email (default is "Your email")? zuber.david@gmx.de
     description (default is "A short description of the project.")? A reddit clone.
     domain_name (default is "example.com")? myreddit.com
     version (default is "0.1.0")? 0.0.1
