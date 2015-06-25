@@ -1,15 +1,15 @@
 cookiecutter-django
 =======================
 
-.. image:: https://requires.io/github/pydanny/cookiecutter-django/requirements.svg?branch=master
-     :target: https://requires.io/github/pydanny/cookiecutter-django/requirements/?branch=master
+.. image:: https://requires.io/github/RayCrafter/cookiecutter-django/requirements.svg?branch=master
+     :target: https://requires.io/github/RayCrafter/cookiecutter-django/requirements/?branch=master
      :alt: Requirements Status
 
-.. image:: https://travis-ci.org/pydanny/cookiecutter-django.svg?branch=master
-     :target: https://travis-ci.org/pydanny/cookiecutter-django?branch=master
+.. image:: https://travis-ci.org/RayCrafter/cookiecutter-django.svg?branch=master
+     :target: https://travis-ci.org/RayCrafter/cookiecutter-django?branch=master
      :alt: Build Status
 
-A cookiecutter_ template for Django.
+A cookiecutter_ template for Django. This is a fork from https://github.com/pydanny/cookiecutter-django.
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 
@@ -22,21 +22,15 @@ Features
 * 12-Factor_ based settings via django-environ_
 * Optimized development and production settings
 * Registration via django-allauth_
-* Procfile_ for deploying to Heroku
 * Grunt build for compass and livereload
 * Basic e-mail configurations for send emails via SendGrid_
-* Media storage using Amazon S3
-* Serve static files from Amazon S3 or Whitenoise_ (optional)
 
 .. _Bootstrap: https://github.com/twbs/bootstrap
 .. _AngularJS: https://github.com/angular/angular.js
 .. _django-environ: https://github.com/joke2k/django-environ
 .. _12-Factor: http://12factor.net/
 .. _django-allauth: https://github.com/pennersr/django-allauth
-.. _django-avatar: https://github.com/jezdez/django-avatar/
-.. _Procfile: https://devcenter.heroku.com/articles/procfile
 .. _SendGrid: https://sendgrid.com/
-.. _Whitenoise: https://whitenoise.readthedocs.org/
 
 
 Constraints
@@ -59,12 +53,10 @@ First, get cookiecutter. Trust me, it's awesome::
 
 Now run it against this repo::
 
-    $ cookiecutter https://github.com/pydanny/cookiecutter-django.git
+    $ cookiecutter https://github.com/RayCrafter/cookiecutter-django.git
 
 You'll be prompted for some questions, answer them, then it will create a Django project for you.
 
-
-**Warning**: After this point, change 'Daniel Greenfeld', 'pydanny', etc to your own information.
 
 It prompts you for questions. Answer them::
 
@@ -84,7 +76,6 @@ It prompts you for questions. Answer them::
     timezone (default is "UTC")?
     now (default is "2015/01/13")? 2015/01/16
     year (default is "2015")?
-    use_whitenoise (default is "y")?
 
 
 Enter the project and take a look around::
@@ -97,7 +88,7 @@ Create a GitHub repo and push it there::
     $ git init
     $ git add .
     $ git commit -m "first awesome commit"
-    $ git remote add origin git@github.com:pydanny/redditclone.git
+    $ git remote add origin git@github.com:RayCrafter/redditclone.git
     $ git push -u origin master
 
 Now take a look at your repo. Don't forget to carefully look at the generated README. Awesome, right?
@@ -165,7 +156,7 @@ Scattered throughout the Python and HTML of this project are places marked with 
 Releases
 --------
 
-Want a stable release? You can find them at https://github.com/pydanny/cookiecutter-django/releases
+Want a stable release? You can find them at https://github.com/RayCaster/cookiecutter-django/releases
 
 
 Not Exactly What You Want?
