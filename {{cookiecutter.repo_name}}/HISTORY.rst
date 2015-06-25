@@ -3,7 +3,7 @@
 History
 -------
 
-{{ cookiecuter.version }} ({{ cookiecutter.release_date }})
+{{ cookiecutter.version }} ({{ cookiecutter.release_date }})
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 * First release.
