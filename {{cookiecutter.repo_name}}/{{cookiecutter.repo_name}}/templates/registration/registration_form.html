@@ -1,4 +1,4 @@
-{% extends "registration/base.html" %}
+{% raw %}{% extends "registration/base.html" %}
 
 {% load url from future %}
 {% load i18n %}
@@ -18,3 +18,4 @@
   <p><input type="submit" value="{% trans 'Register' %}"></p>
 </form>
 {% endblock content %}
+{% endraw %}

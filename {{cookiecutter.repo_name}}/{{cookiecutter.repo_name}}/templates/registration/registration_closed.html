@@ -1,4 +1,4 @@
-{% extends "registration/base.html" %}
+{% raw %}{% extends "registration/base.html" %}
 
 {% load url from future %}
 {% load i18n %}
@@ -10,3 +10,4 @@
 <h1>{% trans "Registration is closed" %}</h1>
 <p>{% trans "I am afraid that registration is currently closed." %}</p>
 {% endblock content %}
+{% endraw %}

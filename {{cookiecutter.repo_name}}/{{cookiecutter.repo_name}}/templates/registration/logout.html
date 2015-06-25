@@ -1,4 +1,4 @@
-{% extends "registration/base.html" %}
+{% raw %}{% extends "registration/base.html" %}
 
 {% load url from future %}
 {% load i18n %}
@@ -10,3 +10,4 @@
 <h1>{% trans "Logged out" %}</h1>
 <p>{% trans "You are logged out." %}</p>
 {% endblock content %}
+{% endraw %}
