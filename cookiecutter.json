@@ -13,5 +13,5 @@
     "dbpasswd": "database password",
     "dbhost": "127.0.0.1",
     "dbport": "5432",
-    "dbname": "database name",
+    "dbname": "database name"
 }
