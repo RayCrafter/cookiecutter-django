@@ -35,6 +35,8 @@ DJANGO_APPS = (
     'django.contrib.admin',
 )
 THIRD_PARTY_APPS = (
+    'oauth2_provider',
+    'rest_framework',
     'crispy_forms',  # Form layouts
     'registration',
     'registration.contrib.notification',
@@ -218,6 +220,21 @@ LOGIN_URL = 'login'
 # SLUGLIFIER
 AUTOSLUG_SLUGIFY_FUNCTION = 'slugify.slugify'
 
+# RESTFRAMEWORK CONFIGURATION
+# ------------------------------------------------------------------------------
+OAUTH2_PROVIDER = {
+    # this is the list of available scopes
+    'SCOPES': {'read': 'Read scope', 'write': 'Write scope', 'groups': 'Access to your groups'}
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'oauth2_provider.ext.rest_framework.OAuth2Authentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+}
 
 # LOGGING CONFIGURATION
 # ------------------------------------------------------------------------------
