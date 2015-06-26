@@ -19,7 +19,7 @@ urlpatterns = [
     url('^registration/', include('registration.urls')),
 
     # Rest
-    url(r'^api/', include('testdjango.users.api.urls')),
+    url(r'^api/', include('{{ cookiecutter.repo_name }}.users.api.urls')),
     url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 
 
