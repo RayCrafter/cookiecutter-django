@@ -23,6 +23,7 @@ Features
 * Optimized development and production settings
 * Registration via django-inspectional-registration_
 * Grunt build for compass and livereload
+* REST Framework with OAuth2
 
 .. _Bootstrap: https://github.com/twbs/bootstrap
 .. _AngularJS: https://github.com/angular/angular.js
