@@ -21,7 +21,6 @@ Features
 * AngularJS_
 * 12-Factor_ based settings via django-environ_
 * Optimized development and production settings
-* Registration via django-inspectional-registration_
 * Grunt build for compass and livereload
 * REST Framework with OAuth2
 

@@ -16,9 +16,6 @@ django-model-utils==2.2
 # Images
 Pillow==2.8.2
 
-# For user registration, login
-django-inspectional-registration==0.5.0
-
 # For the persistence stores
 psycopg2==2.6.1
 

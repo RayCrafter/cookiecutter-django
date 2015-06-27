@@ -38,8 +38,6 @@ THIRD_PARTY_APPS = (
     'oauth2_provider',
     'rest_framework',
     'crispy_forms',  # Form layouts
-    'registration',
-    'registration.contrib.notification',
 )
 
 # Apps specific for this project go here.
@@ -206,10 +204,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
-
-# Registration app config
-ACCOUNT_ACTIVATION_DAYS = 7
-REGISTRATION_SUPPLEMENT_CLASS = None
 
 # Custom user app defaults
 # Select the correct user model

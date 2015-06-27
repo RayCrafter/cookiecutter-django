@@ -6,6 +6,7 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
@@ -15,13 +16,13 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     # User management
+    url('^login/', auth_views.login, name='login'),
+    url('^logout/', auth_views.logout, name='logout'),
     url(r'^users/', include("{{ cookiecutter.repo_name }}.users.urls", namespace="users")),
-    url('^registration/', include('registration.urls')),
 
     # Rest
     url(r'^api/', include('{{ cookiecutter.repo_name }}.users.api.urls')),
     url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
-
 
     # Your stuff: custom urls includes go here
 
