@@ -98,7 +98,7 @@ MANAGERS = ADMINS
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
     # Raises ImproperlyConfigured exception if DATABASE_URL not in os.environ
-    'default': env.db("DATABASE_URL", default="postgres://{{cookiecutter.dbuser}}:{{cookiecutter.dbpasswd}}@{{cookiecutter.dbhost}}:{{cookiecutter.dbport}}/{{cookiecutter.dbname}}"),
+    'default': env.db_url("DATABASE_URL", default="postgres://{{cookiecutter.dbuser}}:{{cookiecutter.dbpasswd}}@{{cookiecutter.dbhost}}:{{cookiecutter.dbport}}/{{cookiecutter.dbname}}"),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
