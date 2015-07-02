@@ -232,7 +232,7 @@ REST_FRAMEWORK = {
 
 # CELERY CONFIGURATION
 # ------------------------------------------------------------------------------
-BROKER_URL=env('BROKER_URL')
+BROKER_URL = env('BROKER_URL')
 CELERY_RESULT_BACKEND = env('CELERY_RESULT_BACKEND', default='amqp')
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
